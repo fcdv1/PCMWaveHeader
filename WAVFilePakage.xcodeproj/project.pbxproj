@@ -14,6 +14,9 @@
 		0327DBD51F5F9B2500D82AF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0327DBD41F5F9B2500D82AF9 /* Assets.xcassets */; };
 		0327DBD81F5F9B2500D82AF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0327DBD61F5F9B2500D82AF9 /* LaunchScreen.storyboard */; };
 		0327DBE31F5F9B2500D82AF9 /* WAVFilePakageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0327DBE21F5F9B2500D82AF9 /* WAVFilePakageTests.m */; };
+		0327DBEF1F5F9B4E00D82AF9 /* WAVFilePakage.c in Sources */ = {isa = PBXBuildFile; fileRef = 0327DBED1F5F9B4E00D82AF9 /* WAVFilePakage.c */; };
+		03C97C1F1F5FD93D0037C969 /* originnalWav.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03C97C1E1F5FD93D0037C969 /* originnalWav.wav */; };
+		03C97C211F5FD94E0037C969 /* pcmNoHeader.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03C97C201F5FD94E0037C969 /* pcmNoHeader.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		0327DBDE1F5F9B2500D82AF9 /* WAVFilePakageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WAVFilePakageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0327DBE21F5F9B2500D82AF9 /* WAVFilePakageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAVFilePakageTests.m; sourceTree = "<group>"; };
 		0327DBE41F5F9B2500D82AF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0327DBED1F5F9B4E00D82AF9 /* WAVFilePakage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = WAVFilePakage.c; sourceTree = "<group>"; };
+		0327DBEE1F5F9B4E00D82AF9 /* WAVFilePakage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAVFilePakage.h; sourceTree = "<group>"; };
+		03C97C1E1F5FD93D0037C969 /* originnalWav.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = originnalWav.wav; sourceTree = "<group>"; };
+		03C97C201F5FD94E0037C969 /* pcmNoHeader.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pcmNoHeader.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,10 @@
 		0327DBC71F5F9B2500D82AF9 /* WAVFilePakage */ = {
 			isa = PBXGroup;
 			children = (
+				03C97C201F5FD94E0037C969 /* pcmNoHeader.wav */,
+				03C97C1E1F5FD93D0037C969 /* originnalWav.wav */,
+				0327DBED1F5F9B4E00D82AF9 /* WAVFilePakage.c */,
+				0327DBEE1F5F9B4E00D82AF9 /* WAVFilePakage.h */,
 				0327DBCB1F5F9B2500D82AF9 /* AppDelegate.h */,
 				0327DBCC1F5F9B2500D82AF9 /* AppDelegate.m */,
 				0327DBCE1F5F9B2500D82AF9 /* ViewController.h */,
@@ -195,9 +206,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C97C1F1F5FD93D0037C969 /* originnalWav.wav in Resources */,
 				0327DBD81F5F9B2500D82AF9 /* LaunchScreen.storyboard in Resources */,
 				0327DBD51F5F9B2500D82AF9 /* Assets.xcassets in Resources */,
 				0327DBD31F5F9B2500D82AF9 /* Main.storyboard in Resources */,
+				03C97C211F5FD94E0037C969 /* pcmNoHeader.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +231,7 @@
 				0327DBD01F5F9B2500D82AF9 /* ViewController.m in Sources */,
 				0327DBCD1F5F9B2500D82AF9 /* AppDelegate.m in Sources */,
 				0327DBCA1F5F9B2500D82AF9 /* main.m in Sources */,
+				0327DBEF1F5F9B4E00D82AF9 /* WAVFilePakage.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +374,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZFH.WAVFilePakage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -372,6 +387,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZFH.WAVFilePakage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -420,6 +436,7 @@
 				0327DBE91F5F9B2500D82AF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0327DBEA1F5F9B2500D82AF9 /* Build configuration list for PBXNativeTarget "WAVFilePakageTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +445,7 @@
 				0327DBEC1F5F9B2500D82AF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
